@@ -16,3 +16,5 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+.metadata/.mylyn/tasks.xml.zip
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
