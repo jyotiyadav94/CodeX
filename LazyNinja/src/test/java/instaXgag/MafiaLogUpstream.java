@@ -3,6 +3,8 @@ package instaXgag;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
+import Base.TestBase;
+
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -14,14 +16,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class MafiaLogUpstream {
+public class MafiaLogUpstream extends TestBase {
 	static WebDriver driver;
 
 	@Test
 	public void instaGag() throws Exception {
-		System.setProperty("webdriver.chrome.driver",
-				"C:/Projects/MarketoApril/Underworld/tartarus/target/classes/drivers/chromedriver/win32/2.44/chromedriver.exe");
-		driver = new ChromeDriver();
+//		System.setProperty("webdriver.chrome.driver",
+//				"C:/Projects/MarketoApril/Underworld/tartarus/target/classes/drivers/chromedriver/win32/2.44/chromedriver.exe");
+//		driver = new ChromeDriver();
 		driver.get("https://www.instagram.com/?hl=en");
 		driver.manage().window().maximize();
 
