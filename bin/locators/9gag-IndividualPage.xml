@@ -1,0 +1,7 @@
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:gsa="http://schemas.google.com/gsa/2007">
+  <gsa:content name="reportName">bbb</gsa:content>
+  <gsa:content name="collectionName">default_collection</gsa:content>
+  <gsa:content name="reportDate">date_3_25_2009</gsa:content>
+</entry>
+NS = {'rootns': 'http://www.w3.org/2005/Atom',
+      'gsa': 'http://schemas.google.com/gsa/2007'}
