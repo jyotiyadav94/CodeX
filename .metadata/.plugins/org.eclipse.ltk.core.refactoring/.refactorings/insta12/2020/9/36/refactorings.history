@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;insta12&apos; to &apos;instaXgag&apos;&#x0D;&#x0A;- Original project: &apos;insta12&apos;&#x0D;&#x0A;- Original element: &apos;insta12/src/test/java/insta12&apos;&#x0D;&#x0A;- Renamed element: &apos;insta12/src/test/java/instaXgag&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;insta12&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;insta12" name="instaXgag" qualified="false" references="true" stamp="1599312679991" textual="false" version="1.0"/>
+</session>
