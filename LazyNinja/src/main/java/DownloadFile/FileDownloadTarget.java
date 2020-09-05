@@ -18,8 +18,9 @@ public class FileDownloadTarget {
 	@BeforeMethod
 	public void setup()
 	{
-		folder=new File(UUID.randomUUID().toString());
-		folder.mkdir();
+		String warehouse=System.getProperty("user.dir") + "\\src\\test\\resources";
+		folder=new File(warehouse);
+		
 		//chrome
 		System.setProperty("webdriver.chrome.driver","/Users/jyotiyadav/Desktop/MLprojects/chromedriver");		
 		ChromeOptions options=new ChromeOptions();
