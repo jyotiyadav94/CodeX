@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -50,7 +51,7 @@ public class TestBase {
 		if (driver == null) {
 
 			try {
-				fis = new FileInputStream(System.getProperty("user.dir") + "src/test/resources/properties/Config.properties");
+				fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/properties/Config.properties");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -64,7 +65,7 @@ public class TestBase {
 			}
 
 			try {
-				fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\OR.properties");
+				fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/properties/OR.properties");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -130,7 +131,7 @@ public class TestBase {
 		} else if (locator.endsWith("_ID")) {
 			driver.findElement(By.id(OR.getProperty(locator))).click();
 		}
-		CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " + locator);
+//		CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " + locator);
 	}
 
 	public void type(String locator, String value) {
@@ -143,7 +144,7 @@ public class TestBase {
 			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
 		}
 
-		CustomListeners.testReport.get().log(Status.INFO, "Typing in : " + locator + " entered value as " + value);
+//		CustomListeners.testReport.get().log(Status.INFO, "Typing in : " + locator + " entered value as " + value);
 
 	}
 
@@ -165,7 +166,19 @@ public class TestBase {
 		CustomListeners.testReport.get().log(Status.INFO, "Selecting from dropdown : " + locator + " value as " + value);
 
 	}
-
+	
+	
+	public void action()
+	{
+		Actions action = new Actions(driver);
+		
+	}
+	
+	public void reload()
+	{
+		driver.navigate().refresh();
+	}
+	
 	public boolean isElementPresent(By by) {
 
 		try {
